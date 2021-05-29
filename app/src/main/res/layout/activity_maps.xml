@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />
+    <TextView
+        android:id="@+id/as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id:"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/Binid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:layout_toRightOf="@id/as"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="langitude"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:layout_above="@id/longitude"
+        />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitute"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/getmapvalue"
+        android:layout_alignParentRight="true" />
+    <Button
+        android:id="@+id/getmapvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Geo"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:backgroundTint="#03A9F4"
+        android:onClick="setlocation"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

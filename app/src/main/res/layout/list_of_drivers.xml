@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F4F0"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_centerHorizontal="true"
+        >
+    <TextView
+        android:id="@+id/sss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_2sdp"
+
+        />
+        <TextView
+            android:id="@+id/list_driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/sss"
+            android:layout_margin="@dimen/_2sdp"
+            />
+
+        <TextView
+            android:id="@+id/ccc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/sss"
+            android:layout_margin="@dimen/_2sdp"
+
+            />
+        <TextView
+            android:id="@+id/list_driver_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Email"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ccc"
+            android:layout_below="@+id/list_driver_name"
+            android:layout_margin="@dimen/_2sdp"
+            />
+        <TextView
+            android:id="@+id/ddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number: "
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/ccc"
+            android:layout_margin="@dimen/_2sdp"
+
+            />
+        <TextView
+            android:id="@+id/list_driver_Number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Number"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ddd"
+            android:layout_below="@+id/list_driver_Email"
+            android:layout_margin="@dimen/_2sdp"
+            />
+        <TextView
+            android:id="@+id/eee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aadhar: "
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/ddd"
+            android:layout_margin="@dimen/_2sdp"
+
+            />
+        <TextView
+            android:id="@+id/list_driver_Aadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver Number"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/eee"
+            android:layout_below="@+id/list_driver_Number"
+            android:layout_margin="@dimen/_2sdp"
+            />
+        <Button
+            android:id="@+id/removeDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_margin="@dimen/_10sdp"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_red_btn"
+            android:textStyle="bold"
+            android:layout_below="@+id/list_driver_Aadhar"
+            />
+        <Button
+            android:id="@+id/updateDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="view details"
+            android:layout_margin="@dimen/_10sdp"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_btn_blue"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/removeDriver"
+            android:layout_below="@+id/list_driver_Aadhar"
+            />
+    </RelativeLayout>
+</RelativeLayout>

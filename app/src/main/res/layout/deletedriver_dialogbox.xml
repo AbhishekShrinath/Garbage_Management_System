@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/www"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email Id"
+        android:gravity="center"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/email_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email ID"
+        android:gravity="center"
+        android:layout_below="@+id/www"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/remove_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/email_remove"
+       />
+
+</RelativeLayout>

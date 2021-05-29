@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FBB8"
+    >
+    <TextView
+        android:id="@+id/txt70"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Data"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:layout_below="@+id/nodataerror70"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/nodataerror70"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/no_data_error"
+        />
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/prograss_bar8"
+        style="@style/SpinKitView.CubeGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#4CAF50"
+        android:layout_centerInParent="true"
+        />
+
+<TextView
+    android:id="@+id/txt8"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:text="Driver Control Panal"
+    android:textStyle="bold|italic"
+    android:textColor="@color/white"
+    android:background="#4CAF50"
+    android:textSize="@dimen/_25ssp"
+    android:gravity="center"
+    />
+
+    <Button
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:id="@+id/driverprofilebtn"
+        android:text="Driver Profile"
+        android:layout_marginHorizontal="@dimen/_15ssp"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        android:onClick="driverprofilebtn"
+        android:background="@drawable/custom_btn_blue"
+        android:textSize="@dimen/_15ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt8"
+        />
+
+    <ListView
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:id="@+id/driver_control_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/driverprofilebtn"
+        />
+
+</RelativeLayout>

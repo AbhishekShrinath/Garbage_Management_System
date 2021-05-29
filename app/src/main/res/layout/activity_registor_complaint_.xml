@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp">
+    <TextView
+        android:id="@+id/txet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Registor Complaint"
+        android:background="@drawable/cystom_btn_green"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        android:layout_below="@+id/nodataerror"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        />
+    <ProgressBar
+        android:id="@+id/prograss_bar_regt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/txt10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No recycle bin Available"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:layout_below="@+id/nodataerror10"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/nodataerror10"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/no_data_error"
+        />
+    <ListView
+        android:id="@+id/registorComplaint_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txet"
+        />
+
+</RelativeLayout>

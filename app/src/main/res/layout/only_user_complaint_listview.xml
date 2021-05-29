@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/l12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id: "
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/U_ids"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:layout_toRightOf="@+id/l12"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textStyle="bold"
+            android:layout_below="@id/l12"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/U_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:layout_below="@id/l12"
+            android:layout_toRightOf="@+id/l1"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="area: "
+            android:layout_below="@id/l1"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/U_Comlaint_Area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="area"
+            android:layout_below="@id/l1"
+            android:layout_toRightOf="@+id/l2"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/l3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint: "
+            android:layout_below="@id/l2"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20ssp"
+            />
+        <TextView
+            android:id="@+id/U_view_complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="complaint"
+            android:layout_below="@id/l2"
+            android:layout_toRightOf="@+id/l3"
+            android:textSize="@dimen/_20ssp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

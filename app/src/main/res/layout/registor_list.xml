@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    >
+
+    <TextView
+        android:id="@+id/b6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id: "
+        android:textSize="@dimen/_20ssp"
+        />
+
+    <TextView
+        android:id="@+id/R_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:layout_toRightOf="@+id/b6"
+        android:textSize="@dimen/_20ssp"
+        />
+    <TextView
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area: "
+        android:layout_below="@id/R_id"
+        android:textSize="@dimen/_20ssp"
+        />
+
+    <TextView
+        android:id="@+id/R_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="area"
+        android:layout_below="@id/R_id"
+        android:layout_toRightOf="@+id/b1"
+        android:textSize="@dimen/_20ssp"
+        />
+    <TextView
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locality: "
+        android:layout_below="@id/b1"
+        android:textSize="@dimen/_20ssp"
+        />
+
+    <TextView
+        android:id="@+id/R_locality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locality"
+        android:layout_below="@id/b1"
+        android:layout_toRightOf="@+id/b2"
+        android:textSize="@dimen/_20ssp"
+        />
+    <TextView
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City: "
+        android:layout_below="@id/R_locality"
+        android:textSize="@dimen/_20ssp"
+        />
+
+    <TextView
+        android:id="@+id/R_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="city"
+        android:layout_below="@id/R_locality"
+        android:layout_toRightOf="@+id/b4"
+        android:textSize="@dimen/_20ssp"
+        />
+    <Button
+        android:id="@+id/ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_below="@+id/b4"
+        />
+</RelativeLayout>

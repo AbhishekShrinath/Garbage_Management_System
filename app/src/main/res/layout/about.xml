@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Garbage ManageMent System"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textColor="#4CAF50"
+        />
+<TextView
+    android:background="@color/white"
+    android:layout_marginVertical="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/abouttxt"
+    android:gravity="center"
+    android:textSize="@dimen/_20ssp"
+    android:textColor="@color/black"
+    android:textStyle="italic"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EmailID: abhishekshrinath0@gmail.com"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/purple_500"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MobileNo: 8446547622"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#03A9F4"
+        android:gravity="center"
+        />
+
+</LinearLayout>

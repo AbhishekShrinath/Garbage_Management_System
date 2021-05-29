@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/draw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/create_bin"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/createbin"
+            android:backgroundTint="#F7F3F3"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:text="Create Bin"
+            />
+
+        <Button
+            android:id="@+id/update_bin"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/updatebin"
+            android:backgroundTint="#F7F3F3"
+            android:textAllCaps="false"
+            android:text="Work Details"
+            />
+
+        <Button
+            android:id="@+id/Create_driver"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+
+            android:drawableTop="@drawable/iconsdriver"
+            android:backgroundTint="#F7F3F3"
+            android:layout_below="@+id/create_bin"
+            android:text="Create Driver"
+            />
+
+        <Button
+            android:id="@+id/View_driver"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/iconsdriver"
+            android:backgroundTint="#F7F3F3"
+            android:layout_below="@+id/update_bin"
+            android:textAllCaps="false"
+            android:text="View Driver"
+            />
+        <Button
+            android:id="@+id/View_complaints"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_165sdp"
+
+            android:layout_marginVertical="@dimen/_30sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/iconscomplaint"
+            android:backgroundTint="#F7F3F3"
+            android:layout_below="@+id/Create_driver"
+            android:text="View Complaints"
+            />
+
+        <Button
+            android:id="@+id/View_Work_report"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_165sdp"
+            android:layout_marginVertical="@dimen/_30sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/workreport"
+            android:backgroundTint="#F7F3F3"
+            android:layout_below="@+id/View_driver"
+            android:text="View Complaint Report"
+            />
+        <Button
+            android:id="@+id/User_Details"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_135sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/userdetails"
+            android:backgroundTint="#F7F3F3"
+            android:layout_below="@+id/View_Work_report"
+            android:text="User Details"
+            />
+    </RelativeLayout>
+</ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header"
+        app:menu="@menu/navigation_menu"
+        >
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Garbage Management System</string>
+    <string name="title_activity_admin_control">AdminControl</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="abouttxt"><u>The Project aims to put in force sustainable systems of waste collection, segregation, and treatment along with a controlled, systematic and creative ways of reducing waste generation across the country. Mishandling of waste can have a variety of consequences on our every day life.</u></string>
+    <string name="forgetpassword"><u>ForgetPassword?</u></string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="Open">NavBar</string>
+    <string name="Close">NavBar</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_view__map">Map</string>
+</resources>

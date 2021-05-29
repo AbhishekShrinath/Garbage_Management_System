@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_10sdp"
+    tools:context=".User_Complaint_Activity">
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/_30sdp"
+        android:textColor="@color/black"
+        />
+<com.github.ybq.android.spinkit.SpinKitView
+    android:id="@+id/prograss_bar4"
+    style="@style/SpinKitView.Large.MultiplePulseRing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:SpinKit_Color="#4CAF50"
+    android:layout_centerInParent="true"
+    />
+
+    <TextView
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Complaint"
+        android:background="@color/teal_700"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20ssp"
+        />
+<ListView
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/complaint_listView"
+    android:layout_below="@+id/a"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/nodataerror2"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/no_data_error"
+        />
+    <ProgressBar
+        android:id="@+id/prograss_bar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#03A9F4"
+        android:text="User Details"
+        android:textColor="#F44336"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        />
+    <ListView
+        android:layout_below="@+id/txt2"
+        android:id="@+id/User_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        />
+</RelativeLayout>

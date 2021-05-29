@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/txt3_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20ssp"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/edit_driver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:textSize="@dimen/_12ssp"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/edit_driver_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:hint="Enter number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textSize="@dimen/_15ssp"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:id="@+id/edit_driver_Aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:hint="Enter Aadhar"
+                android:inputType="number"
+                android:maxLength="14"
+                android:textSize="@dimen/_15ssp"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            >
+            <EditText
+                android:id="@+id/edit_driver_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:hint="Change Password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/_15ssp"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/driver_details_cancelbtn"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+
+                android:text="cancel"
+                android:layout_alignParentLeft="true"
+                app:backgroundTint="@null"
+                android:background="@drawable/custom_btn_blue"
+                android:textColor="@color/white" />
+        <Button
+            android:id="@+id/driver_details_savebtn"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text="Save"
+            app:backgroundTint="@null"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custom_btn_blue"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

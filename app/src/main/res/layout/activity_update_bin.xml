@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/pb"
+        style="@style/SpinKitView.FoldingCube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="#4CAF50"
+        android:layout_centerInParent="true"
+        />
+<TextView
+    android:id="@+id/bin123"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Bin Details"
+
+    android:gravity="center_horizontal"
+    android:textSize="@dimen/_25ssp"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:background="#4CAF50"
+    />
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empty bin"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:layout_below="@+id/nodataerror"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/nodataerror"
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="gone"
+        app:lottie_rawRes="@raw/no_data_error"
+        />
+    <ListView
+    android:layout_margin="@dimen/_5sdp"
+    android:id="@+id/update_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_below="@id/bin123"
+    />
+</RelativeLayout>

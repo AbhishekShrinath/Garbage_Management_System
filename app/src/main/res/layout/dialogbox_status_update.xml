@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:backgroundTint="@null"
+    android:background="@drawable/curve_layout">
+    <TextView
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bin ID"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        android:gravity="center"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+<TextView
+    android:id="@+id/Recive_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Bin ID"
+    android:gravity="center"
+
+    android:layout_below="@+id/rr"
+    android:textSize="@dimen/_20ssp"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    />
+    <TextView
+        android:id="@+id/rr2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status "
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_below="@+id/Recive_id"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <Spinner
+        android:id="@+id/Up_work_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rr2"
+        />
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+<TextView
+    android:layout_marginTop="@dimen/_15sdp"
+    android:id="@+id/txt2_email"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Email"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_20ssp"
+    />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:layout_marginTop="@dimen/_10sdp"
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:textSize="@dimen/_12ssp"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:hint="Enter number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="@dimen/_15ssp"
+            android:background="@drawable/edit_text_shape"
+            android:textColor="@color/black"
+            />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Save"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_btn"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</LinearLayout>

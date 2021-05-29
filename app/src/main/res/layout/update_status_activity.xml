@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE7DE"
+    tools:context=".updateStatus_Activity">
+
+    <TextView
+        android:id="@+id/e"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Assign Driver"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textSize="@dimen/_28ssp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="User Email"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        android:layout_below="@+id/e"
+        android:gravity="center_horizontal"
+        />
+<TextView
+    android:id="@+id/up_email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textStyle="bold|italic"
+    android:textColor="@color/teal_700"
+    android:text="Email"
+    android:textSize="@dimen/_15ssp"
+    android:layout_below="@+id/r2"
+    />
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Complaint"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/_15ssp"
+        android:layout_below="@+id/up_email"
+        />
+    <TextView
+        android:id="@+id/up_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_700"
+        android:text="Complaint"
+        android:textSize="@dimen/_15ssp"
+        android:layout_below="@+id/r"
+        />
+    <TextView
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Assign Work "
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/up_complaint"
+        />
+    <Spinner
+        android:id="@+id/Update_Staus_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r1"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="savebtn"
+        android:textColor="@color/black"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Update_Staus_spinner"
+        android:text="Save"
+        />
+</RelativeLayout>
